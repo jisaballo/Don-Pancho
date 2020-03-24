@@ -1,0 +1,23 @@
+page-challenges {
+    .content {
+        background-color:#ececec;
+    }
+    .item {
+        border-radius: 5px;
+    }
+    .progreso {
+        padding: 0;
+        .item {
+            border-radius: 0;
+            font-size: 14px;
+        }
+    }
+    .item-inicio {
+        border-top-left-radius: 8px !important;
+        border-bottom-left-radius: 8px !important;
+    }
+    .item-fin {
+        border-top-right-radius: 8px !important;
+        border-bottom-right-radius: 8px !important;
+    }
+}

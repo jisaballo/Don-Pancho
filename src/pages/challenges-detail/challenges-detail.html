@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Detalle</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item text-wrap no-lines>
+    <ion-thumbnail item-start>
+      <img src="assets/imgs/products/botellas_vive1.png">
+    </ion-thumbnail>
+    <h2>Vende 100 productos VIVE 100%</h2>
+    <p>Diciembre 23, 2018</p>
+  </ion-item>
+  <br>
+
+  <ion-item no-lines>
+    <ion-icon *ngIf="!step1" name="ios-checkmark-circle-outline" item-start></ion-icon>
+    <ion-icon *ngIf="step1" name="ios-checkmark-circle" item-start color="primary"></ion-icon>
+    <span>Paso 1</span>
+    <p>Tome una foto de su nevera</p>
+  </ion-item>
+
+  <ion-item *ngIf="step1" no-lines>
+    <ion-icon *ngIf="step1 && (!step2)" name="ios-checkmark-circle-outline" item-start></ion-icon>
+    <ion-icon *ngIf="step2" name="ios-checkmark-circle" item-start color="primary"></ion-icon>
+    <span>Paso 2</span>
+    <p>Enviar</p>
+  </ion-item>
+
+  <br>
+  <button *ngIf="!step1" ion-button large block icon-start (click)="takePicture()"><ion-icon></ion-icon>Tomar Foto</button>
+  <button *ngIf="step1 && (!step2)" ion-button large block icon-start (click)="sendMission()"><ion-icon></ion-icon>Enviar</button>
+
+</ion-content>

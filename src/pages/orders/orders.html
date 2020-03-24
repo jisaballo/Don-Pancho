@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Pedidos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-item (click)="viewChart()">
+    <ion-icon color="primary" name="cart" item-start></ion-icon>
+    Carrito
+    <ion-badge color="danger" item-end>2</ion-badge>
+  </ion-item>
+  <ion-list padding no-lines>
+    <div *ngFor="let product of products">
+      <ion-item (click)="presentOrderModal(product)" text-wrap>
+        <ion-thumbnail item-start>
+          <img [src]="product.img">
+        </ion-thumbnail>
+        <h2>{{product.name}}</h2>
+        <p>{{product.description}}</p>
+        <ion-icon item-end color="primary" name="ios-arrow-forward"></ion-icon>
+      </ion-item><br>
+    </div>
+  </ion-list>
+</ion-content>

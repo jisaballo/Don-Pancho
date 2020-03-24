@@ -1,0 +1,30 @@
+page-login {
+    .content {
+        background-color: #0a1e99;
+    }
+    .no-scroll {
+        scroll-content {
+            overflow-y: hidden;
+        }
+    }
+    
+    .scroll {
+        scroll-content {
+            overflow-y: scroll;
+        }
+    }
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20%;
+        width: 80%;
+    }
+    .item {
+        border-radius: 5px;
+    }
+    .recover {
+        background-color: #0a1e99;
+        color: white;
+    }
+}

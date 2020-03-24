@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Perfil</ion-title>
+    <ion-buttons end>
+      <button ion-button color="primary">Editar</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <div>
+    <div class="div_image">
+      <img (click)="modifyPicture()" class="profile_img" src='assets/imgs/profile.png'>
+      <br>
+      <div ion-text color="light" class="username" text-center>Jose Saballo</div>
+    </div>
+    <div padding>
+      <p  class="header">Personal</p>
+      <ion-item no-lines>
+        <div><ion-icon name="compass" item-start></ion-icon>Ecuador</div>
+        <div><ion-icon name="call" item-start></ion-icon>099 608 1039</div>
+        <div><ion-icon name="mail" item-start></ion-icon>jisaballo@outlook.com</div>
+      </ion-item>
+      <br>
+
+      <p class="header">Dirección</p>
+      <ion-item no-lines>
+        <div>Eloy Alfaro</div>
+      </ion-item>
+      
+    </div>
+  </div>
+</ion-content>

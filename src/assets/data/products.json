@@ -1,0 +1,45 @@
+{
+    "products": [
+        {
+            "name": "Nutribela 10",
+            "description": "El único con 10 reconocidos ingredientes",
+            "img": "assets/imgs/products/BNW-NUT-F002-0118.png"
+        }, {
+            "name": "BONICE",
+            "description": "Es una barra congelada divertida, práctica, que tiene variedad de sabores.",
+            "img": "assets/imgs/products/bonice2.png"
+        }, {
+            "name": "VIVE 100%",
+            "description": "Bebida energizante que contiene los ingredientes naturales",
+            "img": "assets/imgs/products/botellas_vive1.png"
+        }, {
+            "name": "Yogoso Duo",
+            "description": "Barra congelada que combina el delicioso sabor a fruta con lo cremosito del yogurt.",
+            "img": "assets/imgs/products/yogoso-duo.png"
+        }, {
+            "name": "Jugos Yá",
+            "description": "Bebida instantánea con Vitaminas C, B3, B9 y B5.",
+            "img": "assets/imgs/products/Img_Destacada_JugosYa-ECU.png"
+        }, {
+            "name": "SunTea con Gas",
+            "description": "Bebida carbonatada con extracto de té!",
+            "img": "assets/imgs/products/Img_Destacada_suntea-con-gas.png"
+        }, {
+            "name": "SunTea",
+            "description": "SUNTEA es ideal para acompañar todas las comidas porque les gusta a los niños.",
+            "img": "assets/imgs/products/suntea-en-polvo2.png"
+        }, {
+            "name": "Saviloe",
+            "description": "La bebida que llegó a revolucionar la categoría de refrescos.",
+            "img": "assets/imgs/products/saviloe.png"
+        }, {
+            "name": "Doña Gallina",
+            "description": "Doña Gallina te da ese saborcito a caldito de gallina que tanto te gusta.",
+            "img": "assets/imgs/products/dona-gallina.png"
+        }, {
+            "name": "Quipitos",
+            "description": "Quipitos es una golosina en polvo que le encanta a los niños y adultos.",
+            "img": "assets/imgs/products/img_destacada_quipitos-ECU.png"
+        }
+    ]
+}

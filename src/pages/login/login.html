@@ -1,0 +1,16 @@
+<ion-content padding>
+  <img class="logo" src="assets/imgs/slogan.png"><br><br>
+  <ion-list no-lines>
+    <ion-item>
+      <ion-input [(ngModel)]="user" placeholder="Usuario" type="text"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-input placeholder="Contraseña" type="password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button color="light" large block (click)="login()">Ingresar</button>
+  <ion-item class="recover" no-lines (click)="recoverPassword()">
+    <span item-end>Recuperar contraseña</span>
+  </ion-item>
+</ion-content>

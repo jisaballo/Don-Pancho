@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Misiones
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div padding>
+    <ion-segment [(ngModel)]="campaing">
+      <ion-segment-button value="active">
+        Activas
+      </ion-segment-button>
+      <ion-segment-button value="sended">
+        Enviadas
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div padding>
+    <div [ngSwitch]="campaing">
+      <ion-list *ngSwitchCase="'active'" no-lines>
+        <ion-item text-wrap (click)="viewActiveMission()">
+          <ion-avatar item-start>
+            <img src="assets/imgs/products/botellas_vive1.png">
+          </ion-avatar>
+          <h2>Vende 100 productos VIVE 100%</h2>
+          <p>Diciembre 23, 2018</p>
+          <ion-icon item-end color="primary" name="ios-arrow-forward"></ion-icon>
+        </ion-item>
+      </ion-list>
+    </div>
+  
+    <div [ngSwitch]="campaing">
+        <ion-list *ngSwitchCase="'sended'" no-lines>
+          <ion-item text-wrap>
+            <ion-avatar item-start>
+              <img src="assets/imgs/challenge-send.png">
+            </ion-avatar>
+            <h2>Recolecta embases</h2>
+            <p>Diciembre 12, 2018</p>
+            <ion-icon item-end color="primary" name="ios-arrow-forward"></ion-icon>
+          </ion-item>
+          <br>
+          <ion-row><ion-col col-12  text-center>Estado del premio</ion-col></ion-row>
+          <ion-row>
+            <ion-col class="progreso" col-4><ion-item class="item-inicio" text-center color=primary>En proceso</ion-item></ion-col>
+            <ion-col class="progreso" col-4><ion-item text-center color=primary>Enviado</ion-item></ion-col>
+            <ion-col class="progreso" col-4><ion-item class="item-fin" text-center color=danger>Entregado</ion-item></ion-col>
+          </ion-row>
+        </ion-list>
+      </div>
+  </div>
+
+</ion-content>

@@ -1,17 +1,47 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Contact
-    </ion-title>
+    <ion-title>Contáctenos</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
+  <ion-card>
+    <ion-item no-lines>
+      <ion-label>Motivo</ion-label>
     </ion-item>
-  </ion-list>
+    <ion-item no-lines>
+      <ion-label color="primary">Equipos</ion-label>
+      <ion-checkbox [(ngModel)]="equip"></ion-checkbox>
+    </ion-item>
+    <ion-item no-lines>
+      <ion-label color="primary">Preventa</ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+    <ion-item no-lines>
+      <ion-label color="primary">Entregas</ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+    <ion-item no-lines>
+      <ion-label color="primary">Premios</ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+    <ion-item no-lines>
+      <ion-label color="primary">Aplicación</ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+    <ion-item *ngIf="equip">
+      <ion-input placeholder="Número de serie"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-textarea placeholder="Dirección" rows="2"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-textarea placeholder="Descripción del problema..." rows="4"></ion-textarea>
+    </ion-item>
+    <br>
+  </ion-card>
+
+  <div padding>
+    <button ion-button large block>Enviar</button>
+  </div>
 </ion-content>

@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Seguimiento</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list no-lines>
+    <ion-list-header>Número de orden: 354949</ion-list-header>
+    <ion-item text-wrap>
+      <ion-icon name="ios-checkmark-circle" item-start color="primary"></ion-icon>
+      <span>Solicitado</span>
+      <p>Orden solicitada por Edmundo Garcia</p>
+    </ion-item>
+    <ion-item text-wrap>
+      <ion-icon name="ios-checkmark-circle" item-start color="primary"></ion-icon>
+      <span>Despachado</span>
+      <p>Orden despachada por Distribuidora S.A.</p>
+    </ion-item>
+    <ion-item text-wrap>
+      <ion-icon name="ios-checkmark-circle" item-start color="primary"></ion-icon>
+      <span>En camino</span>
+      <p>Tiempo estimado de entrega 45 min.</p>
+    </ion-item>
+    <ion-item text-wrap>
+      <ion-icon name="ios-checkmark-circle" item-start color="primary"></ion-icon>
+      <span>Entregado</span>
+      <p>Orden recibida por Manuel Hernandez.</p>
+    </ion-item>
+  </ion-list>
+
+  <ion-list no-lines>
+    <ion-item text-center>Califica el servicio</ion-item>
+    <ion-item>
+      <ion-row>
+        <ion-col col-1></ion-col>
+        <ion-col col-2 text-center (click)="setStar(1)"><ion-icon [name]="star1" color="primary"></ion-icon></ion-col>
+        <ion-col col-2 text-center (click)="setStar(2)"><ion-icon [name]="star2" color="primary"></ion-icon></ion-col>
+        <ion-col col-2 text-center (click)="setStar(3)"><ion-icon [name]="star3" color="primary"></ion-icon></ion-col>
+        <ion-col col-2 text-center (click)="setStar(4)"><ion-icon [name]="star4" color="primary"></ion-icon></ion-col>
+        <ion-col col-2 text-center (click)="setStar(5)"><ion-icon [name]="star5" color="primary"></ion-icon></ion-col>
+        <ion-col col-1 text-center></ion-col>
+      </ion-row>
+    </ion-item><br>
+
+    <button ion-button large block>Enviar</button>
+  </ion-list>
+</ion-content>

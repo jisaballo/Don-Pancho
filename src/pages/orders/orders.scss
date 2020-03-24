@@ -1,0 +1,25 @@
+page-orders {
+    .header {
+        background-color:  #0a1e99;
+    }
+    .content {
+        background-color:#ececec;
+    }
+    .item {
+        border-radius: 5px;
+    }
+    .button {
+        .badge {
+            .icon {
+                position: absolute;
+                top: -0.2rem;
+                right: -0.2rem;
+                opacity: 0.9;
+        
+                & ~ ion-icon {
+                    margin-right: 1.2rem;
+                }
+            }
+        }
+    }
+}

@@ -1,3 +1,19 @@
 page-contact {
-
+    .content {
+        background-color:#ececec;
+    }
+    .item-round, .card {
+        border-radius: 10px;
+    }
+    .item-round {
+        margin: 0 16px 0 16px;
+    }
+    .item {
+        input, textarea {
+            border: 1px solid #488aff !important;
+            padding: 11px;
+            border-radius: 5px;
+            background-color: #ececec;
+        }
+    }
 }
